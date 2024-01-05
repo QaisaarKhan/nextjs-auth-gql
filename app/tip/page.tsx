@@ -1,6 +1,6 @@
 'use client'
 
-// import Pretip from '@/components/Pretip'
+import Pretip from '@/components/Pretip'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 export default function Tip() {
@@ -131,7 +131,7 @@ export default function Tip() {
           </div>
         </div>
         <div className='hidden sm:grid grid-cols-3 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 mt-12 mx-4 sm:mx-10 md:mx-12 lg:mx-1 xl:mx-32 xll:mx-44 gap-6 sm:gap-4 lg:gap-2 xl::gap-6 sm:text-center '>
-          {/* <Pretip /> */}
+          <Pretip />
         </div>
 
         <div className='mt-12 pb-12 mx-6 sm:mx-6 md:mx-12 lg:mx-12 lg:mx-12 xl:mx-28 xll:mx-28'>

@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Get the branch name and extract the desired information (e.g., "branch-123")
+BRANCH_NAME=$(git symbolic-ref --short HEAD)
+PREFIX=$(echo "$BRANCH_NAME" | cut -d "-" -f 1)
+
+# Extract the commit message file path from the hook arguments
+COMMIT_MSG_FILE=$1
+
+# Prepend the extracted prefix to the commit message
+if [ -n "$PREFIX" ]; then
+  echo "$PREFIX: $(cat $COMMIT_MSG_FILE)" > $COMMIT_MSG_FILE
+fi

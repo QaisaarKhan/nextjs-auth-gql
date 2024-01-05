@@ -46,12 +46,12 @@ export default function Service() {
 
         <div className='sm:grid sm:grid-cols-2 gap-1 mt-12'>
           <div className='ml-4 sm:ml-4 md:ml-8 lg:ml-28'>
-            {/* <Service1 /> */}
+            <Service1 />
           </div>
 
           <div>
             <div className='mr-1 sm:mr-0 ml-1 sm:ml-4 md:ml-8 xl:ml-36 xll:ml-64 bg-white sm:h-[100%] md:h-[95%] lg:h-[90%] rounded-md'>
-              {/* <Service2 /> */}
+              <Service2 />
             </div>
             <div className='hidden md:block sm:mx-20 flex float-right py-12'>
               <button
